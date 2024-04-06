@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MotorLife</title>
+        <link rel="icon" href="../images/b2.png" type="image/x-icon">
+        <link rel="stylesheet" href="../style/showPic.css">
+        <link rel="stylesheet" href="../style/sportsg.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <h1><a href="./index.html">MotorLife</a></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <table class="gallery-table">
+                    <tr>
+                        <td class="left-box">
+                            <img src="../images/Sport BMW.avif">
+                            <h1>BMW S1000RR 2023</h1>
+                            <div id="bmwContent" style="display: none;">
+                                <p>Price: $20,000</p>
+                                <p>Capacity: 999cc</p>
+                                <p>Top Speed: 188mph</p>
+                            </div>
+                            <button class="showmore-button" data-target="bmwContent">
+                                Show More
+                            </button>
+                        </td>
+                        <td class="right-box">
+                            <img src="../images/Sport Yamaha.webp">
+                            <h1>YAMAHA</h1>
+                            <div id="yamahaContent" style="display: none;">
+                                <p>Price: $18,000</p>
+                                <p>Capacity: 970cc</p>
+                                <p>Top Speed: 181mph</p>
+                            </div>
+                            <button class="showmore-button" data-target="yamahaContent">
+                                Show More
+                            </button>
+                        </td>
+                    </tr>
+                </table>   
+            </section>
+        </main>
+        <footer align="center" style="margin-top: 700px;">
+            <p>&copy; 2024 MotorLife</p>
+        </footer>
+        <script src="/js/showmore.js"></script>
+    </body>
+</html>

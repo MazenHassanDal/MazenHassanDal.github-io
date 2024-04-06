@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/third\ background.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex; /* Changed to flex to control the vertical flow */
+    flex-direction: column; /* Ensures content is laid out top to bottom */
+    min-height: 100vh;
+}
+.header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    grid-area: header;
+
+}
+.header .navbar, .header h1 {
+    display: flex;
+    justify-content: center; /* Center navbar and h1 content */
+    width: 100%;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover, .header h1 a:hover {
+    color: red;
+}
+.header .navbar {
+    transform: scale(1.03); /* Slightly increase size on hover for interactive feedback */
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background color on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.header .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+  
+.header .nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.header h1 a{
+    font-size: 50px;
+    color: rgb(173, 6, 40);
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+  
+.header .nav-links a:hover {
+    transition: color 0.3s ease-in-out;
+    color: red;
+}
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.gallery-table {
+    width: 100%; /* Adjust based on your layout needs */
+    margin: 20px 0;
+    border-collapse: collapse; /* Remove space between borders */
+    /* background-color: transparent; Ensure table background doesn't interfere */
+}
+
+.gallery-table td {
+    background-color: grey;
+    color: white; 
+    padding: 20px; /* Padding inside each box for content spacing */
+    margin: 10px 0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    width: 50%; /* Half width to allow two boxes per row */
+}
+
+.gallery-table tr {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-table img{
+    width: 80%;
+    height: 80%;
+}
+
+.gallery-table h1 {
+    color: black;
+    font-size: 24px; 
+    text-align: center; /* Center align headers */
+    margin-bottom: 15px; /* Space below the header */
+}
+
+.gallery-table a {
+    display: block; /* Block display to occupy its own line */
+    text-align: center; /* Center align links */
+    margin: 10px 0; 
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold; 
+}
+
+.gallery-table a:hover {
+    color: red; /* Highlight links on hover */
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.gallery-table ol, .gallery-table ul {
+    list-style: inside; 
+    padding-left: 0; 
+}
+
+.gallery-table li {
+    margin: 5px 0; /* Margin between list items */
+}
+
+footer {
+    grid-row-start: 3; /* Position footer at the bottom of the grid */
+    grid-row-end: 4;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Fixed at the bottom */
+    bottom: 0;
+    background-color: #333; 
+    color: white; 
+}

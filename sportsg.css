@@ -1,0 +1,16 @@
+.showmore-button{
+    border-radius: 5px; 
+    border: none; 
+    background-color: transparent; 
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+.showmore-button:hover{
+    color: hsla(0, 0%, 100%, 0.589);
+}
+p{
+    text-align: center;
+    color: black;
+}

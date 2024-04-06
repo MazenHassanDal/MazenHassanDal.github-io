@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/new\ background.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex; /* Changed to flex to control the vertical flow */
+    flex-direction: column; /* Ensures content is laid out top to bottom */
+    min-height: 100vh;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    grid-area: header;
+
+}
+.header .navbar, .header h1 {
+    display: flex;
+    justify-content: center; /* Center navbar and h1 content */
+    width: 100%;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover, .header h1 a:hover {
+    color: red;
+}
+.header .navbar {
+    transform: scale(1.03); /* Slightly increase size on hover for interactive feedback */
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background color on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.header .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+  
+.header .nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.header h1 a{
+    font-size: 50px;
+    color: rgb(173, 6, 40);
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+  
+.header .nav-links a:hover {
+    transition: color 0.3s ease-in-out;
+    color: red;
+}
+  
+main {
+    overflow: auto;
+    flex-grow: 1;
+    display: flex; /* Change the main content area to use CSS Grid */
+    flex-direction: column;
+    padding: 20px;
+}
+
+.news-content {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts to fit content, with a minimum width */
+    gap: 20px;
+    padding: 20px;
+    margin: auto; /* Centers the grid if the max-width is less than the viewport width */
+    max-width: 1200px; /* Maximum width for the news content area */
+    box-sizing: border-box;
+}
+
+.news-content video, .news-content iframe, .news-content img {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.news-content div {
+    background-color: rgb(146, 146, 218);
+    padding: 15px; /* Space inside each division */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.news-content audio {
+    width: 100%; /* Ensure audio controls match the division's width */
+    max-width: 560px; /* Maximum width, matching the image */
+}
+/* Style for each paragraph */
+.news-content p {
+    text-align: center;
+    font-size: 16px;
+    color: #333; 
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.news-content a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-content a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Style for the iframe to make it responsive */
+.news-content iframe {
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    max-height: 315px; /* Maximum height for the video */
+}
+
+footer {
+    grid-row-start: 3; /* Position footer at the bottom of the grid */
+    grid-row-end: 4;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Fixed at the bottom */
+    bottom: 0;
+    background-color: #333; /* Footer background */
+    color: white; /* Footer text color */
+}
+@media (max-width: 440px) {
+    .header, .navbar, .main, .footer {
+        padding: 10px;
+    }
+    .navbar ul {
+        display: block;
+    }
+    
+    .navbar ul li {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .news-content {
+        grid-template-columns: 1fr; /* Adjust content to stack vertically on smaller screens */
+    }
+    
+}

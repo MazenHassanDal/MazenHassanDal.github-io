@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MotorLife</title>
+        <link rel="icon" href="../images/b2.png" type="image/x-icon">
+        <link rel="stylesheet" href="../style/showPic.css">
+        <link rel="stylesheet" href="../style/cruiseg.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1><a href="./index.html">MotorLife</a></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <table class="gallery-table">
+                    <tr>
+                        <td class="left-box">
+                            <img src="../images/Cruise Honda.webp">
+                            <h1>HONDA</h1>
+                            <div id="honda1Content" style="display: none;">
+                                <p>Price: $11,000</p>
+                                <p>Capacity: 650cc</p>
+                                <p>Top Speed: 148mph</p>
+                            </div>
+                            <button class="showmore-button" data-target="honda1Content">
+                                Show More
+                            </button>
+                        </td>
+                        <td class="right-box">
+                            <img src="../images/Cruise Yamaha.jpeg">
+                            <h1>YAMAHA</h1>
+                            <div id="yamaha1Content" style="display: none;">
+                                <p>Price: $13,000</p>
+                                <p>Capacity: 700cc</p>
+                                <p>Top Speed: 160mph</p>
+                            </div>
+                            <button class="showmore-button" data-target="yamaha1Content">
+                                Show More
+                            </button>
+                        </td>
+                    </tr>
+                </table>   
+            </section>
+        </main>
+        <footer align="center" style="margin-top: 700px;">
+            <p>&copy; 2024 MotorLife</p>
+        </footer>
+        <script src="/js/showmore.js"></script>
+    </body>
+</html>

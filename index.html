@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorLife</title>
+    <link rel="icon" href="../images/b2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/main.css">    
+    <body>
+        <header class="header">
+            <h1><a href="./index.html">MotorLife</a></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content=section">
+            <section class="sec1">
+                <p>Indulge in the exhilarating world of motorcycles!</p>
+                <ul>
+                    <li>"Rev up your passion for motorcycles and hit the road"</li>
+                    <li>"Feel the freedom, fuel the passion – ride motorcycles"</li>
+                    <li>"Discover the joy of exploring new horizons"</li>
+                    <li>"Speed, thrill, passion – ride motorcycles."</li>
+                    <li>"From passion to pavement – ride motorcycles."</li>
+                </ul>
+            </section>
+            <section class="sec2">
+                <div class="sec2-title">
+                    <h2>ON SALE!</h2>
+                </div>
+                <div class="sec2-content">
+                    <a href="https://www.suzuki.ca/product/2023-gsx-r1000a/" target="_blank">
+                    <img src="../images/b2.png" alt="Product Image">
+                    </a>
+                </div>
+            </section>
+            <button id="greeting"></button>
+            <button id="notifyButton">
+                <img src="/images/notify.png">
+            </button>
+            <span id="hoverNotify">Click to subscribe</span>
+            
+            <div class="colorButtons">
+                <button id="batmanMode">Batman Mode</button>
+                <button id="resetScheme">Reset</button>
+                <button id="robinMode">Robin Mode</button>
+            </div>
+        </div>
+            <div class= "form-section" id="giveawayForm">
+                <form action="index.php" method="POST">
+                    <label id="titleForm">GIVEAWAY!</label><br><br>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="myname@example.com" required><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                    <label for="province">Province:</label>
+                    <select>
+                        <option value="">--Select a Province--</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Alberta">Alberta</option>
+                    </select><br>
+
+                    <label for="items">Items:</label>
+                    <select required>
+                        <option value="">--Select an Item--</option>
+                        <option value="Helmet">Helmet</option>
+                        <option value="Gloves">Gloves</option>
+                        <option value="Boots">Boots</option>
+                    </select><br>
+
+                    <label for="comment">Reason:</label>
+                    <textarea id="comment" placeholder="Tell us why you like motorcycles" required></textarea>
+                    <input type="submit" style="cursor: pointer;">
+                </form>
+            </div>
+
+
+        </main>
+        <footer>
+            <p>&copy; 
+        </footer>
+        <script src="/js/notify.js"></script>
+        <script src="/js/greeting.js"></script>
+        <script src="/js/colorSchemes.js"></script>
+        <script src="/js/form.js"></script>
+    </body>
+</html>
